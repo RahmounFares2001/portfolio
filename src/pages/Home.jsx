@@ -28,7 +28,7 @@ export default function Home(){
         <div className="flex justify-center sm:flex-row flex-col animate-fade-in lg:mt-10 lg:gap-20 md:mt-8 md:gap-10
          md:ml-24 sm:gap-10 sm:mt-10 sm:ml-20 mt-8 ">
             <div className="flex flex-col md:mt-12 sm:mt-10 mt-10">
-                <h1 className="lg:text-5xl md:text-4xl md:ml-10 sm:text-3xl text-xl text-center"> 
+                <h1 className="lg:text-5xl md:text-4xl md:ml-10 sm:text-3xl text-xl sm:text-start text-center"> 
                 <Typed
                 strings={[
                     'Rahmoun Fares',
