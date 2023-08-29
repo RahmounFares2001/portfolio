@@ -3,6 +3,9 @@ import React from "react";
 // import Typed from "react-typed";
 // "react-typed": "^1.2.0",
 
+// "@emotion/react": "^11.11.1",
+// "@emotion/styled": "^11.11.0",
+
 // material-ui
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
