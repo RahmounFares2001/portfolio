@@ -1,6 +1,6 @@
 import React from "react";
 
-import Typed from "react-typed";
+// import Typed from "react-typed";
 
 // material-ui
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -28,8 +28,8 @@ export default function Home(){
         <div className="flex justify-center sm:flex-row flex-col animate-fade-in lg:mt-10 lg:gap-20 md:mt-8 md:gap-10
          md:ml-24 sm:gap-10 sm:mt-10 sm:ml-20 mt-8 ">
             <div className="flex flex-col md:mt-12 sm:mt-10 mt-10">
-                <h1 className="lg:text-5xl md:text-4xl md:ml-10 sm:text-3xl text-xl sm:text-start text-center"> 
-                <Typed
+                <h1 className="lg:text-5xl md:text-4xl md:ml-10 sm:text-3xl text-xl sm:text-start text-center"> fares
+                {/* <Typed
                 strings={[
                     'Rahmoun Fares',
                     'Frontend dev'
@@ -37,7 +37,7 @@ export default function Home(){
                 typeSpeed={100}
                 backSpeed={40}
                 loop={Infinity}
-                />
+                /> */}
           
                </h1>
                 <p className="md:mt-8 sm:mt-4 mt-2 flex justify-center lg:text-xl md:text-base sm:text-sm text-xs/4">Information systems engineering student</p>
