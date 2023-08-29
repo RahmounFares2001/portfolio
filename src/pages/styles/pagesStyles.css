@@ -1,0 +1,133 @@
+/* Home social media  */
+div div div ul li a .social{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 9%;
+    left: 8%;
+
+}
+div div div ul li a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 40%;
+
+}
+
+.insta:hover{
+    transition: color 0.7s ease;
+    color: #d30120;
+    color: -webkit-linear-gradient(0deg, #ff0026 0%, #b32fff 100%);
+    color: linear-gradient(0deg, #ff0026 0%, #b32fff 100%);
+}
+.fb:hover, .linkedIn:hover{
+    transition: color 0.7s ease;
+    color: #000ed6;
+}
+.telegram:hover{
+    transition: color 0.7s ease;
+    color: #2837ff;
+}
+.git:hover{
+    transition: color 0.7s ease;
+    color:rgb(68, 68, 68);
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    div div div ul li a .social{
+        width: 30px;
+        height: 30px;
+        top: 10%;
+        left: 11%;
+    }
+    div div div ul li a{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+@media screen and (min-width:640px) and (max-width:768px) {
+    div div div ul li a .social{
+        width: 25px;
+        height: 25px;
+        top: 10%;
+        left: 11%;
+    }
+    div div div ul li a{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media screen and (max-width:640px) {
+    div div div ul li a .social{
+        width: 20px;
+        height: 20px;
+        top: 10%;
+        left: 11%;
+    }
+    div div div ul li a{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+
+/* skills bar animation */
+@keyframes fillBar80 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+.animated-bar80 {
+    animation: fillBar80 1.5s ease-in-out forwards;
+}
+
+@keyframes fillBar60 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+    }
+}
+.animated-bar60 {
+    animation: fillBar60 1.5s ease-in-out forwards;
+}
+
+@keyframes fillBar40 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 40%;
+    }
+}
+.animated-bar40 {
+    animation: fillBar40 1.5s ease-in-out forwards;
+}
+
+
+/* fade-in animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fade-in {
+    animation: fade-in 1s ease-in-out;
+}
+
+
+
+
+
