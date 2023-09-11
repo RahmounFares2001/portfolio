@@ -11,6 +11,7 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
+import ContactMe from "./pages/ContactMe";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
             <Route path="/resume" element={<Resume />} />
             <Route path="/about" element={<About />} />
             <Route path="/skills" element={<Skills />} />
+            <Route path="/contactMe" element={<ContactMe />} />
 
         </Route>
     )

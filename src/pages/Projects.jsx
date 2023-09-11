@@ -2,17 +2,19 @@ import React from "react";
 
 
 // images
-import keeper from "../assets/images/keeper.jpg";
+// import keeper from "../assets/images/keeper.jpg";
 
 
 export default function Projects(){
     return(
-        <div className="flex justify-center items-center md:justify-start md:items-start">
-            <div className="flex mt-20 md:ml-20 animate-fade-in lg:w-2/5 md:w-72 sm:w-72 w-4/5 h-auto
-            ">
+        <div className="flex justify-center">
+            <div className="flex mt-20 animate-fade-in lg:w-2/5 md:w-72 sm:w-72 w-4/5 h-auto
+            bg-gradient-to-r from-red-950 to-transparent">
                 <div className="lg:h-96 md:h-72 sm:h-72 flex justify-center items-center 
                 gap-16 border-red-900 border-2 rounded-lg
-                hover:bg-red-950 hover:shadow-lg hover:shadow-white hover:border-white">
+                hover:bg-gradient-to-l hover:from-red-950 hover:to-transparent 
+                hover:shadow-lg hover:shadow-white hover:border-white
+                transition duration-1000 ease-in-out hover:scale-80 ">
                     <div className="lg:w-4/5 md:w-4/5 sm:w-4/5 w-4/5 ">
                         <h1 className="text-center lg:text-xl md:text-xs sm:text-xs/4 text-xs/2 mt-5">Keeper app 📝</h1>
                         <p className="lg:text-sm md:text-xs lg:mt-6 lg:mb-8 md:mt-4 md:mb-6 sm:mt-3 sm-mb-5
@@ -21,14 +23,17 @@ export default function Projects(){
                             <a className="lg:text-lg lg:w-32 lg:h-10 md:text-sm md:w-24 md:h-8 sm:text-xs sm:w-16
                             text-xs/4 w-16 h-6 
                             bg-white text-black  text-center rounded-lg
-                            hover:bg-red-900 hover:text-white hover:shadow-md hover:shadow-white"
-                            target="_blank" href="https://keeper-nu-nine.vercel.app/">
+                            hover:bg-red-900 hover:text-white hover:shadow-md hover:shadow-white
+                            transition duration-1000 ease-in-out hover:scale-80"
+                            target="_blank" rel="noreferrer" href="https://keeper-nu-nine.vercel.app/">
                                 <p className="lg:mt-1 md:mt-2 mt-1">View site</p></a>
                             <a className="lg:text-lg lg:w-32 lg:h-10 md:text-sm md:w-24 md:h-8 sm:text-xs/3 sm:w-24
                             w-20 text-xs/4
                             bg-white text-black text-center rounded-lg
-                            hover:bg-red-900 hover:text-white hover:shadow-md hover:shadow-white"
-                            target="_blank" href="https://github.com/RahmounFares2001/keeper">
+                            hover:bg-red-900 hover:text-white hover:shadow-md hover:shadow-white
+                            transition duration-1000 ease-in-out hover:scale-80
+                            "
+                            target="_blank" rel="noreferrer" href="https://github.com/RahmounFares2001/keeper">
                                 <p className="lg:mt-1 md:mt-2 mt-1">Github repo</p></a>
                         </div>
                     </div>
