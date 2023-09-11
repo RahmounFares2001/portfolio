@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Typed from "react-typed";
+// import Typed from "react-typed";
 // "react-typed": "^1.2.0",
 
 // layout
@@ -37,8 +37,8 @@ export default function Home(){
         <div className="flex justify-center md:flex-row animate-fade-in lg:mt-10 lg:gap-48 md:mt-16 md:gap-32
         sm:gap-10 sm:mt-10 sm:ml-20 mt-8 ">
             <div className="flex flex-col md:mt-12 sm:mt-10 mt-10">
-                <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-xl sm:text-s">
-                <Typed
+                <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-xl sm:text-s"> fares
+                {/* <Typed
                 strings={[
                     'Rahmoun Fares',
                     'Frontend dev'
@@ -46,7 +46,7 @@ export default function Home(){
                 typeSpeed={100}
                 backSpeed={40}
                 loop={Infinity}
-                />
+                /> */}
           
                </h1>
                 <p className="md:mt-12 sm:mt-4 mt-2 flex justify-center lg:text-xl md:text-lg sm:text-lg text-xs/4">Information systems engineering student</p>
