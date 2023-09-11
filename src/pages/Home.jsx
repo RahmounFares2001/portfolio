@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import Typed from 'typed.js';
 
 // import Typed from "react-typed";
-// "react-typed": "^1.2.0",
+// "react-typed": "^1.2.0", 
 
 // layout
 import SocialMedia from "../layout/SocialMedia";
@@ -30,6 +31,21 @@ export default function Home(){
         setExpended(true);
     }
 
+
+    // types
+    const typedRef = useRef(null);
+
+    const options = {
+        strings: ['Rahmoun Fares', 'Frontend dev'],
+        typeSpeed: 100,
+        backSpeed: 40,
+        loop: true,
+      };
+
+      useEffect(() => {
+        const typed = new Typed(typedRef.current, options);
+      });
+
  
      
  
@@ -37,7 +53,7 @@ export default function Home(){
         <div className="flex justify-center md:flex-row animate-fade-in lg:mt-10 lg:gap-48 md:mt-16 md:gap-32
         sm:gap-10 sm:mt-10 sm:ml-20 mt-8 ">
             <div className="flex flex-col md:mt-12 sm:mt-10 mt-10">
-                <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-xl sm:text-s"> fares
+                <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-xl sm:text-s"><span ref={typedRef}></span>
                 {/* <Typed
                 strings={[
                     'Rahmoun Fares',
