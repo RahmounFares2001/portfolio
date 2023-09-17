@@ -41,39 +41,40 @@ div div div ul li a{
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     div div div ul li a .social{
-        width: 45px;
-        height: 45px;
-        top: 10%;
-        left: 11%;
+        width: 100px;
+        height: 100px;
+        top: 0%;
+        left: 2%;
     }
     div div div ul li a{
-        width: 55px;
-        height: 55px;
+        width: 105px;
+        height: 105px;
     }
+  
 
 }
 @media screen and (min-width:640px) and (max-width:768px) {
     div div div ul li a .social{
-        width: 45px;
-        height: 45px;
-        top: 10%;
-        left: 11%;
+        width: 90px;
+        height: 90px;
+        top: 1%;
+        left: 4%;
     }
     div div div ul li a{
-        width: 55px;
-        height: 45px;
+        width: 95px;
+        height: 95px;
     }
 }
 @media screen and (max-width:640px) {
     div div div ul li a .social{
-        width: 40px;
-        height: 40px;
-        top: 10%;
-        left: 11%;
+        width: 70px;
+        height: 70px;
+        top: 3%;
+        left: 5%;
     }
     div div div ul li a{
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 }
 
@@ -135,13 +136,7 @@ div div div ul li a{
 }
 
 
-/* home photo */
 
-@media screen and (max-width: 768px) {
-    div div img{
-        display: none;
-    }
-}
 
 
 

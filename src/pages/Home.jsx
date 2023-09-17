@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import Typed from 'typed.js';
 
-// import Typed from "react-typed";
-// "react-typed": "^1.2.0", 
+// import typed
+import Typed from 'typed.js';
 
 // layout
 import SocialMedia from "../layout/SocialMedia";
@@ -25,14 +24,14 @@ export default function Home(){
 
 
     // social media expended
-    const [isExponded, setExpended] = useState(true);
+    const [isExponded, setExpended] = useState(false);
 
     function handelExpend() {
         setExpended(true);
     }
 
 
-    // types
+    // typed
     const typedRef = useRef(null);
 
     const options = {
@@ -44,34 +43,30 @@ export default function Home(){
 
       useEffect(() => {
         const typed = new Typed(typedRef.current, options);
-      });
+        return () => {
+          typed.destroy();
+        };
+      }, []); 
 
  
      
  
     return(
-        <div className="flex justify-center md:flex-row animate-fade-in lg:mt-10 lg:gap-48 md:mt-16 md:gap-32
-        sm:gap-10 sm:mt-10 sm:ml-20 mt-8 ">
-            <div className="flex flex-col md:mt-12 sm:mt-10 mt-10">
-                <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-xl sm:text-s"><span ref={typedRef}></span>
-                {/* <Typed
-                strings={[
-                    'Rahmoun Fares',
-                    'Frontend dev'
-                ]}
-                typeSpeed={100}
-                backSpeed={40}
-                loop={Infinity}
-                /> */}
-          
+        <div className="flex justify-center flex-col lg:flex-row animate-fade-in lg:mt-10 lg:gap-48 md:mt-16 gap-32
+         mt-8 ">
+            <div className="flex justify-center flex-col md:mt-12 sm:mt-10 mt-10">
+                <h1 className="lg:text-5xl md:text-7xl sm:text-6xl text-5xl text-center">
+                    <span ref={typedRef}></span>
                </h1>
-                <p className="md:mt-12 sm:mt-4 mt-2 flex justify-center lg:text-xl md:text-lg sm:text-lg text-xs/4">Information systems engineering student</p>
+                <p className="md:mt-12 sm:mt-4 mt-2 flex justify-center lg:text-xl md:text-3xl sm:text-2xl text-xl">Information systems engineering student</p>
 
-                <div>
+                <div className="flex justify-center items-center">
                     {isExponded? 
                     <SocialMedia />: 
                     <div onClick={handelExpend}
-                    className="text-center lg:text-5xl md:mt-16 sm:mt-8 mt-8 bg-gradient-to-r from-gray-400 to-transparent
+                    className="text-center  lg:text-5xl md:text-6xl sm:text-5xl text-4xl mt-16
+                    lg:w-full sm:w-96 w-80
+                    bg-gradient-to-r from-gray-400 to-transparent
                     h-16 rounded-lg hover:bg-gradient-to-l hover:from-red-950 hover:to-transparent
                     text-gray-950 hover:text-gray-400
                     hover:transition-colors hover:duration-1000 cursor-pointer active:animate-fade-in"
@@ -82,8 +77,8 @@ export default function Home(){
                 </div>
             </div>
 
-            <div className="flex justify-center">
-                <img src={photo} alt="homeLogo" className="my-pic lg:w-96 md:w-72 md:mt-7 sm:w-48 sm:mt-3 w-32 mt-12 mr-24
+            <div className="flex justify-center items-center">
+                <img src={photo} alt="homeLogo" className="flex flex-center w-3/5 lg:w-96 lg:h-96 
                 " style={picStyle} /> 
             </div>
         </div>
