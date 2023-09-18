@@ -717,6 +717,10 @@ video {
   width: 100vw;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1190,6 +1194,10 @@ video {
 
   .sm\:w-3\/5 {
     width: 60%;
+  }
+
+  .sm\:w-4\/5 {
+    width: 80%;
   }
 
   .sm\:flex-row {
