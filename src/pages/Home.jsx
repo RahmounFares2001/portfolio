@@ -55,10 +55,10 @@ export default function Home(){
         <div className="flex justify-center flex-col lg:flex-row animate-fade-in lg:mt-10 lg:gap-48 md:mt-16 gap-32
          mt-8 mb-20">
             <div className="flex justify-center flex-col md:mt-12 sm:mt-10 mt-10">
-                <h1 className="lg:text-5xl md:text-7xl sm:text-6xl text-5xl text-center">
+                <h1 className="lg:text-5xl md:text-7xl sm:text-6xl text-4xl text-center">
                     <span ref={typedRef}></span>
                </h1>
-                <p className="md:mt-12 sm:mt-4 mt-2 flex justify-center lg:text-xl md:text-3xl sm:text-2xl text-xl">Information systems engineering student</p>
+                <p className="md:mt-12 sm:mt-4 mt-2 flex justify-center lg:text-xl md:text-3xl sm:text-2xl text-base">Information systems engineering student</p>
 
                 <div className="flex justify-center items-center">
                     {isExponded? 
