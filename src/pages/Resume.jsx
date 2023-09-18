@@ -5,7 +5,7 @@ import resume from "../assets/images/resume.jpg";
 
 export default function Resume(){
     return(
-        <div className="flex flex-col items-center animate-fade-in">
+        <div className="flex flex-col items-center mb-20 animate-fade-in">
             {/* pdf hosted by tinny */}
             <a href="https://rahmounfares.tiiny.site/" target="_blank" className="bg-red-700  text-center 
             rounded-lg hover:bg-slate-400 hover:text-black hover:transition-colors hover:duration-500

@@ -13,7 +13,7 @@ export default function SocialMedia() {
 
     return(
         <div> 
-            <ul className="grid grid-flow-col justify-center grid-rows-2 mt-20 lg:gap-14 md:gap-32 sm:gap-24 gap-20 
+            <ul className="grid grid-flow-col justify-center grid-rows-2 mt-20 lg:gap-14 md:gap-32 sm:gap-20 gap-16 
             animate-fade-in2" > 
                         <li><a className="hover:shadow-lg hover:shadow-blue-800 transition duration-1000 ease-in-out hover:scale-80" href="https://www.linkedin.com/in/fares-rahmoun-018674257/" target="_blank" rel="noreferrer"> <LinkedInIcon className="social linkedIn" /> </a> </li>
                         <li><a className="hover:shadow-lg hover:shadow-white transition duration-1000 ease-in-out hover:scale-80" href="https://github.com/RahmounFares2001" target="_blank" rel="noreferrer"> <GitHubIcon className="social git" /> </a> </li>
