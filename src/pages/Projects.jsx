@@ -65,7 +65,6 @@ export default function Projects() {
                                         <p className="lg:mt-1 md:mt-2 mt-1">Github repo</p></a>
                                 </div>
                                 
-                        
                             </div>
                         
                             {/* <img src={keeper} alt="Keeper" className="lg:w-2/5 lg:h-72 md:w-64 md:h-64 border-red-900 border-2 rounded-lg" /> */}
