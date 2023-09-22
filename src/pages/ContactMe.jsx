@@ -12,10 +12,10 @@ export default function ContactMe() {
                 className="lg:w-2/5 w-4/5 bg-gray-100 p-5 sm:p-3 text-gray-800 border-2 border-gray-600
                 text-base sm:text-2xl" required />
                 <input type="email" placeholder="Email"
-                className="lg:w-2/5 w-4/5 bg-gray-100 p-3 text-gray-800 border-2 border-gray-600
+                className="lg:w-2/5 w-4/5 bg-gray-100 p-5 sm:p-3 text-gray-800 border-2 border-gray-600
                 text-base sm:text-2xl" required />
                 <textarea type="message" rows="5" placeholder="Your Message"
-                className="lg:w-2/5 w-4/5 bg-gray-100 p-3 text-gray-800 border-2 border-gray-600
+                className="lg:w-2/5 w-4/5 bg-gray-100 p-5 sm:p-3 text-gray-800 border-2 border-gray-600
                 text-base sm:text-2xl" required />
 
                 <button className="lg:w-2/5 lg:h-14 h-14 w-4/5 border-2 

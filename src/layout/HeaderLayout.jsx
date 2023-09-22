@@ -5,6 +5,7 @@ import NavLinks from "./NavLinks";
 
 // material-ui
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 // images
 // import logo from "../assets/images/logo.jpg";
@@ -20,10 +21,14 @@ export default function HeaderLayout() {
         setShowed(!isShowed);
     }
 
+
     return(
         <div>
             <header className="w-screen text-white animate-fade-in ">
-                <div className="flex md:hidden justify-end tr" onClick={showMenu}><MenuIcon className="menu" /></div>
+                <div className="flex md:hidden justify-end" onClick={showMenu}>
+                    {isShowed? <div className="animate-fade-in"><CloseIcon className="menu" /></div> :
+                    <div className="animate-fade-in"><MenuIcon className="menu" /></div>}
+                </div>
             
                 <div className="flex justify-start text-lg">
                 <div className="tracking-widest lg:gap-12 md:gap-12 md:ml-4 md:mt-4
