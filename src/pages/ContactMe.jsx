@@ -18,7 +18,11 @@ export default function ContactMe() {
                 className="lg:w-2/5 w-4/5 bg-gray-100 p-3 text-gray-800 border-2 border-gray-600
                 text-base sm:text-2xl" required />
 
+<<<<<<< HEAD
                 <button className="lg:w-2/5 lg:h-14 h-14 w-4/5 border-2 
+=======
+                <button className="lg:w-2/5 lg:h-14 h-14 sm:w-3/5 w-4/5 border-2 
+>>>>>>> 9d38afc4b2ce902de708310c390e11b240ac5318
                 border-gray-600 bg-gradient-to-r from-gray-400 to-transparent hover:bg-gradient-to-l
                  hover:from-red-950 hover:to-transparent text-gray-950 hover:text-gray-400
                     hover:transition-colors hover:duration-1000 cursor-pointer active:animate-fade-in" >Sumbit</button>
