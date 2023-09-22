@@ -14,7 +14,7 @@ export default function Projects() {
         {
             id : 1,
             namee :"Car rental 🚗",
-            details : "Car rental website using React and css for styling. Do you need reliable, hassle-free transportation options? Look no further! At Car Rental we offer a wide range of high quality vehicles for all your travel needs.",
+            details : "Explore our car rental website built with React and styled using CSS. Discover reliable, hassle-free transportation options with our wide selection of high-quality vehicles, catering to all your travel requirements.",
             viewSite : "https://carrental-orcin.vercel.app/",
             githubRepo : "https://github.com/RahmounFares2001"
     
@@ -22,10 +22,17 @@ export default function Projects() {
         {
             id : 2,
             namee : "Keeper app 📝",
-            details : "Built using ReactJS for the frontend and styled with pure CSS. The app's responsive design ensures a seamless experience whether you are on a desktop, tablet, or smartphone.📝 Stay organized by categorizing your notes. Whether it's personal, work-related, or creative ideas .",
+            details : "Developed with ReactJS and styled using CSS, this app offers a responsive design for a seamless experience across devices. It allows you to categorize and organize your notes, be it for personal, work, or creative purposes.",
             viewSite : "https://keeper-nu-nine.vercel.app/",
             githubRepo : "https://github.com/RahmounFares2001/keeper"
         },
+        {
+            id:3,
+            namee: "CV generator",
+            details: "Creating a user-friendly website for effortless CV creation, input personal/professional details, and auto-generate well-structured CVs, streamlining job applications.",
+            viewSite: "c",
+            githubRepo: "https://github.com/RahmounFares2001",
+        }
     ]
 
  
@@ -45,7 +52,7 @@ export default function Projects() {
                             
                                         <h1 className="text-center lg:text-5xl md:text-4xl sm:text-3xl text-2xl mt-3 mb-5">{proj.namee}</h1>
                                 <p className="lg:text-base md:text-base text-sm lg:mt-6 lg:mb-8 md:mt-4 md:mb-6 sm:mt-3 sm-mb-5
-                                mt-3 mb-5">Built using ReactJS for the frontend and styled with pure CSS. The app's responsive design ensures a seamless experience whether you are on a desktop, tablet, or smartphone.📝 Stay organized by categorizing your notes. Whether it's personal, work-related, or creative ideas .</p>
+                                mt-3 mb-5">{proj.details}</p>
 
 
                                 <div className="flex lg:gap-10 md:gap-8 sm:gap-7 justify-center mb-5 gap-6" >

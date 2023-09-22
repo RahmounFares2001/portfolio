@@ -69,8 +69,8 @@ export default function Home(){
                     bg-gradient-to-r from-gray-400 to-transparent
                     h-16 rounded-lg hover:bg-gradient-to-l hover:from-red-950 hover:to-transparent
                     text-gray-950 hover:text-gray-400
-                    hover:transition-colors hover:duration-1000 cursor-pointer active:animate-fade-in"
-                            ><span>My Accounts</span></div>
+                    hover:transition-colors hover:duration-1000 cursor-pointer active:animate-fade-in
+                    border-2 border-gray-600 hover:border-white"><span>My Accounts</span></div>
                     }
                     
                     

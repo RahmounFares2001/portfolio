@@ -26,7 +26,7 @@ export default function About(){
 
                 <div className="md:w-96 md:pr-4 sm:w-72 w-auto">
                     <h1 className="lg:text-4xl md:text-4xl sm:text-3xl text-3xl pt-3 text-center">About me</h1>
-                    <h2 className="lg:text-base lg:mt-6 md:text-base md:mt-4 sm:text-sm sm:mt-2 text-base pb-3">I m Rahmoun Fares 22 years old from Algeria and i m currently information system engineering student (4/5) in the national polytechnic school of Algeria and also i m a junior frontend developer . I m simply enjoy writing codes learning new technologies .</h2>
+                    <h2 className="lg:text-base lg:mt-6 md:text-base md:mt-4 sm:text-sm sm:mt-2 text-base pb-3">I am Rahmoun Fares, a 22-year-old student from Algeria, currently pursuing a degree in Information System Engineering (4/5) at the National Polytechnic School of Algeria. I am eager to further expand my knowledge by pursuing a Master 1 in Computer Science at a French university. My passion for technology and coding has led me to become a junior frontend developer, where I enjoy writing code and continually learning new technologies. </h2>
                 </div>
             </div>
         </div>
