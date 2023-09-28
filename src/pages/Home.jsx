@@ -19,7 +19,8 @@ export default function Home(){
 
     // photo style
     const picStyle = {
-        borderRadius: '34% 64% 77% 26% / 73% 54% 45% 19%',
+        // borderRadius: '34% 64% 77% 26% / 73% 54% 45% 19%',
+        animation: 'spin 5s linear infinite', 
       };
 
 
@@ -64,13 +65,13 @@ export default function Home(){
                     {isExponded? 
                     <SocialMedia />: 
                     <div onClick={handelExpend}
-                    className="text-center  lg:text-5xl md:text-6xl sm:text-5xl text-4xl mt-16
+                    className="text-center  lg:text-5xl md:text-5xl sm:text-5xl text-4xl mt-16
                     lg:w-full sm:w-96 w-80
                     bg-gradient-to-r from-gray-400 to-transparent
                     h-16 rounded-lg hover:bg-gradient-to-l hover:from-red-950 hover:to-transparent
                     text-gray-950 hover:text-gray-400
                     hover:transition-colors hover:duration-1000 cursor-pointer active:animate-fade-in
-                    border-2 border-gray-600 hover:border-white"><span>My Accounts</span></div>
+                    border-2 border-gray-600 hover:border-white"><span className="block mt-2 sm:mt-0">My Accounts</span></div>
                     }
                     
                     
@@ -79,7 +80,7 @@ export default function Home(){
 
             <div className="flex justify-center items-center">
                 <img src={photo} alt="homeLogo" className="flex flex-center w-3/5 lg:w-96 lg:h-96 
-                " style={picStyle} /> 
+                border-4 border-black" style={picStyle} /> 
             </div>
         </div>
     )

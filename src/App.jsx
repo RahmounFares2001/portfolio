@@ -12,6 +12,7 @@ import Resume from "./pages/Resume";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import ContactMe from "./pages/ContactMe";
+import Footer from "./pages/Footer";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -30,6 +31,8 @@ const router = createBrowserRouter(
 
 export default function App() {
     return(
-        <RouterProvider router={router} />
+        <div>
+            <RouterProvider router={router} />
+        </div>
     )
 };

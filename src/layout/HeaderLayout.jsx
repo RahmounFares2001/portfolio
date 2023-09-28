@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
+
 import NavLinks from "./NavLinks";
+import Footer from "../pages/Footer";
 
 // material-ui
 import MenuIcon from '@mui/icons-material/Menu';
@@ -93,6 +95,7 @@ export default function HeaderLayout() {
                     </div>:
             <main>
                 <Outlet />
+                <Footer />
             </main> }
         </div>
     )

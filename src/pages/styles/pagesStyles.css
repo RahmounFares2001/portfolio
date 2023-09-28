@@ -93,6 +93,18 @@ div div div ul li a{
     animation: fillBar80 1.5s ease-in-out forwards;
 }
 
+@keyframes fillBar70 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    }
+}
+.animated-bar70 {
+    animation: fillBar70 1.5s ease-in-out forwards;
+}
+
 @keyframes fillBar60 {
     from {
         width: 0;
@@ -103,6 +115,17 @@ div div div ul li a{
 }
 .animated-bar60 {
     animation: fillBar60 1.5s ease-in-out forwards;
+}
+@keyframes fillBar100 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+.animated-bar100 {
+    animation: fillBar100 1.5s ease-in-out forwards;
 }
 
 @keyframes fillBar40 {
@@ -135,6 +158,37 @@ div div div ul li a{
     animation: fade-in 1.3s ease-in-out;
 }
 
+
+/* home image animation */
+@keyframes spin {
+    0% {
+        border-radius: 34% 64% 77% 26% / 73% 54% 45% 19%;
+      }
+    33% {
+        border-radius:  9% 91% 20% 80% / 61% 35% 65% 39%; 
+      }
+    72%{
+        border-radius: 45% 55% 35% 65% / 82% 59% 41% 18% 
+    }
+    100% {
+        border-radius: 34% 64% 77% 26% / 73% 54% 45% 19%;
+      }
+}
+
+@keyframes aboutMePicSpin {
+    0% {
+        border-radius: 34% 64% 77% 26% / 73% 54% 45% 19%;
+      }
+    33% {
+        border-radius:  9% 91% 20% 80% / 61% 35% 65% 39%; 
+      }
+    72%{
+        border-radius: 45% 55% 35% 65% / 82% 59% 41% 18% 
+    }
+    100% {
+        border-radius: 34% 64% 77% 26% / 73% 54% 45% 19%;
+      }
+}
 
 
 

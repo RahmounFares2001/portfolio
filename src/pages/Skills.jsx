@@ -19,30 +19,30 @@ export default function Skills(){
                     <div>
                         <h1 className="mt-4">React js</h1>
                         <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-3/5 bg-red-700 rounded-s-md 
-                        animated-bar60"></div></div>
+                        animated-bar70"></div></div>
                     </div>
                     <div>
                         <h1 className="mt-4">Tailwind</h1>
                         <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-3/5 bg-red-700 rounded-s-md 
-                        animated-bar60"></div></div>
+                        animated-bar80"></div></div>
                     </div>
                     <div>
                         <h1 className="mt-4">HTML/CSS</h1>
-                        <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-4/5 bg-red-700 rounded-s-md
-                        animated-bar80 "></div></div>
+                        <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-4/5 bg-red-700 rounded-md
+                        animated-bar100 "></div></div>
                     </div>
                 </div>
 
                 <div>
                     <div>
-                        <h1>Oracle</h1>
+                        <h1>MongoDB</h1>
                         <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-4/5 bg-red-700 rounded-s-md
                         animated-bar80"></div></div>
                     </div>
                     <div>
-                        <h1 className="mt-4">MongoDB</h1>
+                        <h1 className="mt-4">Oracle</h1>
                         <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-4/5 bg-red-700 rounded-s-md
-                        animated-bar80 "></div></div>
+                        animated-bar60 "></div></div>
                     </div>
                     <div>
                         <h1 className="mt-4">Java</h1>

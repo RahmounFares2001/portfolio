@@ -8,6 +8,10 @@ import React from "react";
 
 
 export default function Projects() {
+    const style = {
+        // borderRadius: '34% 64% 77% 26% / 73% 54% 45% 19%',
+        animation: 'projectSpin 5s linear infinite', // Apply the animation
+      };
 
     const project = [
       
@@ -40,14 +44,14 @@ export default function Projects() {
     return(
         <div className="flex flex-col mb-20">
               {project.map((proj) => (
-                <div className="flex justify-center lg:mr-20">
+                <div className="flex justify-center lg:mr-20 " >
                     <div className="flex mt-20 flex-col animate-fade-in w-4/5 h-auto
-                    bg-gradient-to-r from-red-950 to-transparent">
-                        <div className="lg:h-96 md:h-72 sm:h-72 flex justify-center items-center 
-                        gap-16 border-red-900 border-2 rounded-lg
+                    bg-gradient-to-r from-red-950 to-transparent rounded-lg" >
+                        <div className="lg:h-96 md:h-72 sm:h-72 flex justify-center items-center gap-16 
                         hover:bg-gradient-to-l hover:from-red-950 hover:to-transparent 
                         hover:shadow-lg hover:shadow-white hover:border-white
-                        transition duration-1000 ease-in-out hover:scale-80 ">
+                        border-red-900 border-2 rounded-lg
+                        transition duration-1000 ease-in-out" >
                             <div className="w-4/5 ">
                             
                                         <h1 className="text-center lg:text-5xl md:text-4xl sm:text-3xl text-2xl mt-3 mb-5">{proj.namee}</h1>
@@ -68,7 +72,7 @@ export default function Projects() {
                                     bg-white text-black  text-center rounded-lg
                                     hover:bg-red-900 hover:text-white hover:shadow-md hover:shadow-white
                                     transition duration-1000 ease-in-out hover:scale-80"
-                                    target="_blank" rel="noreferrer" href={proj.githubRepo}>
+                                    target="_blank" rel="noreferrer" href={proj.githubRepo} >
                                         <p className="lg:mt-1 md:mt-2 mt-1">Github repo</p></a>
                                 </div>
                                 
