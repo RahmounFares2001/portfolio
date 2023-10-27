@@ -7,6 +7,8 @@ export default function Resume(){
     return(
         <div className="flex flex-col items-center mb-20 animate-fade-in">
             {/* pdf hosted by tinny */}
+        
+
             <a href="https://rahmounfares.tiiny.site/" target="_blank" className="bg-red-700  text-center 
             rounded-lg hover:bg-slate-400 hover:text-black hover:transition-colors hover:duration-500
             hover:shadow-2xl hover:shadow-red-600 lg:my-12 lg:w-60 lg:h-14 sm:w-2/5 w-3/5 h-14

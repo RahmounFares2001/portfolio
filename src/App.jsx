@@ -31,7 +31,19 @@ const router = createBrowserRouter(
 
 export default function App() {
     return(
-        <div>
+        <div className="wrapper">
+            <div className="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
             <RouterProvider router={router} />
         </div>
     )
