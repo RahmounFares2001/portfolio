@@ -51,7 +51,6 @@ export default function Home(){
 
  
      
- 
     return(
         <div className="flex justify-center flex-col lg:flex-row animate-fade-in lg:mt-10 lg:gap-48 md:mt-16 gap-32
          mt-8 mb-20">

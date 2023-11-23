@@ -5,7 +5,7 @@ import React from "react";
 export default function Skills(){
 
     return(
-        <div className="mt-16 flex flex-col  items-center  animate-fade-in">  
+        <div className="mt-16 flex flex-col  items-center  animate-slideIn">  
             <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl">Skills</h1>
 
             <div className="flex flex-row lg:gap-20 md:text-lg lg:mt-10 md:gap-16 md:mt-8
@@ -60,6 +60,3 @@ export default function Skills(){
         </div>
     )
 }
-
-
-
