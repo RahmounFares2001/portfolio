@@ -7,8 +7,8 @@ export default function NavLinks() {
 
     return(
         <div>
-            <div className="tracking-widest
-                    md:hidden flex flex-col gap-8 text-4xl animate-fade-in
+            <div className=" tracking-widest
+                    md:hidden flex flex-col gap-8 text-4xl
                     "> 
 
                         <NavLink to="/" className=" hover:text-red-500 hover:font-bold hover:border-b

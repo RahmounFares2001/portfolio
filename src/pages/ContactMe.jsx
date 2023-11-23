@@ -21,7 +21,7 @@ export default function ContactMe() {
                 <button className="lg:w-2/5 lg:h-14 h-14 w-4/5 border-2 
                 border-gray-600 bg-gradient-to-r from-gray-400 to-transparent hover:bg-gradient-to-l
                  hover:from-red-950 hover:to-transparent text-gray-950 hover:text-gray-400
-                    hover:transition-colors hover:duration-1000 cursor-pointer active:animate-fade-in" >Sumbit</button>
+                    hover:transition-colors hover:duration-1000 cursor-pointer" >Sumbit</button>
             </form>
         </div>
     )

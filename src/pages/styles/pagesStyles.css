@@ -16,27 +16,51 @@ div div div ul li a{
 
 }
 
+.insta-hover:hover .insta {
+    color: #d30120;
+    transition: color 0.7s ease;
+}
 .insta:hover{
     transition: color 0.7s ease;
     color: #d30120;
     color: -webkit-linear-gradient(0deg, #ff0026 0%, #b32fff 100%);
     color: linear-gradient(0deg, #ff0026 0%, #b32fff 100%);
 }
+
+.yout-hover:hover .youtube{
+    transition: color 0.7s ease;
+    color: #e70325;
+}
 .youtube:hover{
     transition: color 0.7s ease;
     color: #e70325;
 }
-.fb:hover, .linkedIn:hover{
+
+/* .fb:hover, .linkedIn:hover{
     transition: color 0.7s ease;
     color: #000ed6;
 }
 .telegram:hover{
     transition: color 0.7s ease;
     color: #2837ff;
+} */
+.git-hover:hover .git{
+    transition: color 0.7s ease;
+    color:rgb(68, 68, 68);
 }
 .git:hover{
     transition: color 0.7s ease;
     color:rgb(68, 68, 68);
+}
+
+
+.link-hover:hover .linkedIn{
+    transition: color 0.7s ease;
+    color: #000ed6;
+}
+.linkedIn:hover{
+    transition: color 0.7s ease;
+    color: #000ed6;
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -77,6 +101,8 @@ div div div ul li a{
         height: 75px;
     }
 }
+
+
 
 
 
@@ -191,84 +217,47 @@ div div div ul li a{
 }
 
 
-
-/* background animation */
-.wrapper {
-    display: absolute;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-.box div{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
-    border: 6px solid rgba(255, 255, 255, 0.8);
-
-}
-.box div:nth-child(1){
-    top: 12%;
-    left: 42%;
-    animation: animate 2s linear infinite;
-}
-.box div:nth-child(2){
-    top: 70%;
-    left: 50%;
-    animation: animate 2s linear infinite;
-}
-.box div:nth-child(3){
-    top: 17%;
-    left: 6%;
-    animation: animate 2s linear infinite;
-}
-.box div:nth-child(4){
-    top: 20%;
-    left: 60%;
-    animation: animate 2s linear infinite;
-}
-.box div:nth-child(5){
-    top: 67%;
-    left: 10%;
-    animation: animate 2s linear infinite;
-}
-.box div:nth-child(6){
-    top: 80%;
-    left: 70%;
-    animation: animate 2s linear infinite;
-}
-.box div:nth-child(7){
-    top: 80%;
-    left: 60%;
-    animation: animate 2s linear infinite;
-}
-.box div:nth-child(8){
-    top: 32%;
-    left: 25%;
-    animation: animate 2s linear infinite;
-}
-.box div:nth-child(9){
-    top: 90%;
-    left: 25%;
-    animation: animate 2s linear infinite;
-}
-.box div:nth-child(10){
-    top: 20%;
-    left: 80%;
-    animation: animate 2s linear infinite;
-}
-
-@keyframes animate{
-    0%{
-        transform: scale(0) translateY(0) rotate(0);
-        opacity: 0.1;
-    }
-    100%{
-        transform: scale(1.3) translateY(-90px) rotate(360deg);
+@keyframes imgRotate {
+    0% {
         opacity: 0;
+        transform: scale(1) rotate(18deg);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2) rotate(9deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
     }
 }
+.animate-rotate-img{
+    animation: imgRotate 0.7s linear;
+    transition: opacity ease-in-out;
+}
 
+
+
+
+/* about */
+@keyframes aboutRotate {
+    0% {
+        opacity: 0;
+        transform: scale(1) rotate(-1deg);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1) rotate(-0.5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+.animate-rotate-about{
+    animation: aboutRotate 0.7s linear;
+    transition: opacity ease-in-out;
+}
 
 
 

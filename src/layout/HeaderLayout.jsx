@@ -26,7 +26,7 @@ export default function HeaderLayout() {
 
     return(
         <div>
-            <header className="w-screen text-white animate-fade-in ">
+            <header className="w-screen text-white animate-slideIn">
                 <div className="flex md:hidden justify-end" onClick={showMenu}>
                     {isShowed? <div className="animate-fade-in"><CloseIcon className="menu" /></div> :
                     <div className="animate-fade-in"><MenuIcon className="menu" /></div>}

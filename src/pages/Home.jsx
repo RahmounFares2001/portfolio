@@ -25,7 +25,7 @@ export default function Home(){
 
 
     // social media expended
-    const [isExponded, setExpended] = useState(false);
+    const [isExponded, setExpended] = useState(true);
 
     function handelExpend() {
         setExpended(true);
@@ -55,13 +55,13 @@ export default function Home(){
     return(
         <div className="flex justify-center flex-col lg:flex-row animate-fade-in lg:mt-10 lg:gap-48 md:mt-16 gap-32
          mt-8 mb-20">
-            <div className="flex justify-center flex-col md:mt-12 sm:mt-10 mt-10">
+            <div className="animate-fade-in flex justify-center flex-col md:mt-12 sm:mt-10 mt-10">
                 <h1 className="lg:text-5xl md:text-7xl sm:text-6xl text-4xl text-center">
                     <span ref={typedRef}></span>
                </h1>
                 <p className="md:mt-12 sm:mt-4 mt-2 flex justify-center lg:text-xl md:text-3xl sm:text-2xl text-base">Information systems engineering student</p>
 
-                <div className="flex justify-center items-center">
+                <div>
                     {isExponded? 
                     <SocialMedia />: 
                     <div onClick={handelExpend}
@@ -78,7 +78,7 @@ export default function Home(){
                 </div>
             </div>
 
-            <div className="flex justify-center items-center">
+            <div className="animate-rotate-img flex justify-center items-center">
                 <img src={photo} alt="homeLogo" className="flex flex-center w-3/5 lg:w-96 lg:h-96 
                 border-4 border-black" style={picStyle} /> 
             </div>

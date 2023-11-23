@@ -13,7 +13,7 @@ export default function About(){
       };
 
     return(
-        <div className="flex justify-center animate-fade-in">
+        <div className="flex justify-center animate-rotate-about">
             <div className="flex flex-col sm:flex-row lg:h-96 lg:w-3/5 lg:gap-14 lg:mt-20 w-4/5 md:gap-7 md:mt-16 md:pl-4
              sm:gap-6 sm:pl-2 sm:mt-16 h-auto  pl-1 mt-14
              cursor-pointer  justify-center items-center  border-2 border-red-900 

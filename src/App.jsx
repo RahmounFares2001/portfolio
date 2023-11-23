@@ -7,7 +7,7 @@ import HeaderLayout from "./layout/HeaderLayout";
 
 //pages
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
+import Projects from "./pages/Projects/Projects";
 import Resume from "./pages/Resume";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
@@ -30,21 +30,7 @@ const router = createBrowserRouter(
 
 
 export default function App() {
-    return(
-        <div className="wrapper">
-            <div className="box">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+    return(       
             <RouterProvider router={router} />
-        </div>
     )
 };
