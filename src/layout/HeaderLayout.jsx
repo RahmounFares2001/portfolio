@@ -28,7 +28,7 @@ export default function HeaderLayout() {
         <div>
             <header className="w-screen text-white animate-slideIn">
                 <div className="flex md:hidden justify-end" onClick={showMenu}>
-                    {isShowed? <div className="animate-fade-in"><CloseIcon className="menu" /></div> :
+                    {isShowed? <div className="animate-slideIn"><CloseIcon className="menu" /></div> :
                     <div className="animate-fade-in"><MenuIcon className="menu" /></div>}
                 </div>
             
@@ -70,27 +70,27 @@ export default function HeaderLayout() {
 
                         <NavLink to="/" className=" hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600  text-center hover:transition-colors hover:duration-1000 
-                          lg:w-16 md:w-12 " onClick={showMenu}>Home</NavLink>
+                          lg:w-16 md:w-12  animate-responsive-menu1" onClick={showMenu}>Home</NavLink>
 
                         <NavLink to="/projects" className="hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600 text-center hover:transition-colors hover:duration-1000
-                         lg:w-24 md:w-24" onClick={showMenu}>Projects</NavLink>
+                         lg:w-24 md:w-24 opacity-0 animate-responsive-menu2" onClick={showMenu}>Projects</NavLink>
 
                         <NavLink to="/resume" className="hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600  text-center hover:transition-colors hover:duration-1000
-                         lg:w-20 md:w-16" onClick={showMenu}>Resume</NavLink>
+                         lg:w-20 md:w-16 opacity-0 animate-responsive-menu3" onClick={showMenu}>Resume</NavLink>
 
                         <NavLink to="/about" className="hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600  text-center hover:transition-colors hover:duration-1000
-                          lg:w-20 md:w-16" onClick={showMenu}>About</NavLink>
+                          lg:w-20 md:w-16 opacity-0 animate-responsive-menu4" onClick={showMenu}>About</NavLink>
 
                         <NavLink to="/skills" className="hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600  text-center hover:transition-colors hover:duration-1000
-                         lg:w-20 md:w-16" onClick={showMenu}>skills</NavLink>
+                         lg:w-20 md:w-16 opacity-0 animate-responsive-menu5" onClick={showMenu}>skills</NavLink>
 
                          <NavLink to="/contactMe" className="hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600  text-center hover:transition-colors hover:duration-1000
-                         lg:w-20 md:w-16" onClick={showMenu}>Contact</NavLink>
+                         lg:w-20 md:w-16 opacity-0 animate-responsive-menu6" onClick={showMenu}>Contact</NavLink>
 
                     </div>:
             <main>

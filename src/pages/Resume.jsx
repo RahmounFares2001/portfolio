@@ -14,7 +14,7 @@ export default function Resume(){
                  hover:from-red-950 hover:to-transparent text-gray-950 hover:text-gray-400
                     hover:transition-colors hover:duration-1000 cursor-pointer
                     lg:w-1/5 lg:h-14 h-14 md:w-2/5 w-3/5 my-6 flex items-center justify-center
-            transition duration-300 ease-in-out" > 
+            transition duration-300 ease-in-out animate-fade-in" > 
                 <p className="lg:text-lg md:text-xl sm:text-lg text-base"> View in Google docs </p></a>
 
             <img src={resume} alt="resume" className="lg:w-3/5 lg:h-4/5 md:w-4/5 w-4/5" /> 
