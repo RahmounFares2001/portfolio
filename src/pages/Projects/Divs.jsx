@@ -22,7 +22,7 @@ export default function Divs({ project, index }) {
         }}
         initial="hidden"
         animate={controls}
-        transition={{ duration: 1, delay: index * 0.25 }}
+        transition={{ duration: 1, delay: 0 }}
         className="flex justify-center lg:mr-20"
       >
         <div ref={ref} className="flex mt-20 flex-col w-4/5 h-auto bg-gradient-to-r from-red-950 to-transparent rounded-lg">
