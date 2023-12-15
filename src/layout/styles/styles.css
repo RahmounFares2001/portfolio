@@ -24,3 +24,49 @@ div ul div .social-btn:hover .name{
     animation: slideIn 1s ease-out;
 }
 
+
+/* @keyframes socialSlide1 {
+    from {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
+@keyframes socialSlide2 {
+    from {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes socialSlide3 {
+    from {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.animate-socialSlide1{
+    animation: socialSlide2 1s 0.2s ease-out forwards;
+}
+.animate-socialSlide2{
+    animation: socialSlide2 1s 0.5s ease-out forwards;
+}
+.animate-socialSlide3{
+    animation: socialSlide3 1s 0.6s ease-out forwards;
+}
+.animate-socialSlide4{
+    animation: socialSlide3 1s 0.7s ease-out forwards;
+}
+

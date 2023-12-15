@@ -72,12 +72,10 @@ export default function Home(){
                     hover:transition-colors hover:duration-1000 cursor-pointer active:animate-fade-in
                     border-2 border-gray-600 hover:border-white"><span className="block mt-2 sm:mt-0">My Accounts</span></div>
                     }
-                    
-                    
                 </div>
             </div>
 
-            <div className="animate-rotate-img flex justify-center items-center">
+            <div className="animate-rotate-img flex justify-center items-center opacity-0">
                 <img src={photo} alt="homeLogo" className="flex flex-center w-3/5 lg:w-96 lg:h-96 
                 border-4 border-black" style={picStyle} /> 
             </div>

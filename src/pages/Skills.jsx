@@ -35,12 +35,12 @@ export default function Skills(){
 
                 <div>
                     <div>
-                        <h1>MongoDB</h1>
+                        <h1>Postgresql</h1>
                         <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-4/5 bg-red-700 rounded-s-md
                         animated-bar80"></div></div>
                     </div>
                     <div>
-                        <h1 className="mt-4">Oracle</h1>
+                        <h1 className="mt-4">Typescript</h1>
                         <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-4/5 bg-red-700 rounded-s-md
                         animated-bar60 "></div></div>
                     </div>

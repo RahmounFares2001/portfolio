@@ -259,7 +259,7 @@ div div div ul li a{
 @keyframes imgRotate {
     0% {
         opacity: 0;
-        transform: scale(1) rotate(18deg);
+        transform: scale(1) rotate(18deg) translateX(150px);
     }
     50% {
         opacity: 0.5;
@@ -267,11 +267,11 @@ div div div ul li a{
     }
     100% {
         opacity: 1;
-        transform: scale(1) rotate(0deg);
+        transform: scale(1) rotate(0deg) translateX(0);
     }
 }
 .animate-rotate-img{
-    animation: imgRotate 0.7s linear;
+    animation: imgRotate 0.7s 0.7s linear forwards;
     transition: opacity ease-in-out;
 }
 
