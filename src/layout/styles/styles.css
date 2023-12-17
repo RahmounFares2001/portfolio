@@ -56,9 +56,19 @@ div ul div .social-btn:hover .name{
     }
 }
 
-@keyframes socialSlide3 {
+@keyframes socialSlidePhone {
     from {
         transform: translateX(150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes socialSlidePhone2 {
+    from {
+        transform: translateY(-150px);
         opacity: 0;
     }
     to {
@@ -81,6 +91,10 @@ div ul div .social-btn:hover .name{
     animation: socialSlide3 1s 0.7s ease-out forwards;
 }
 
+/* responsive */
 .animate-socialSlidePhone{
     animation: socialSlidePhone 1s 0.7s ease-out forwards;
+}
+.animate-socialSlidePhone2{
+    animation: socialSlidePhone2 1s 0.7s ease-out forwards;
 }

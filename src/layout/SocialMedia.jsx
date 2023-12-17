@@ -19,7 +19,7 @@
                 <ul className="flex flex-col gap-5" >
                     <div className="grid justify-center lg:grid-cols-4 grid-cols-2 mt-20 lg:gap-1 md:gap-32 sm:gap-20 gap-16 
                 ">
-                        <div className="opacity-0 animate-socialSlide1">
+                        <div className="opacity-0 animate-socialSlidePhone lg:animate-socialSlide1">
                             <div className="social-btn link-hover flex flex-col items-center gap-3">
                                 <li><a className="hover:shadow-lg hover:shadow-blue-800 shadow-lg shadow-blue-800 lg:shadow-none transition duration-1000 ease-in-out hover:scale-80" href="https://www.linkedin.com/in/fares-rahmoun-018674257/" target="_blank" rel="noreferrer"> <LinkedInIcon className="social linkedIn" /> </a></li>
                                 <div className="name linkdd bg-blue-900 rounded-md opacity-0 text-lg p-1 hidden lg:block">Rahmoun Fares</div>
@@ -31,7 +31,7 @@
                                 <div className="name gitt bg-gray-400 text-black rounded-md opacity-0 text-lg p-1 hidden lg:block">RahmounFares2001</div>
                             </div>
                         </div>
-                        <div className="opacity-0 animate-socialSlide3">
+                        <div className="opacity-0 animate-socialSlidePhone2 lg:animate-socialSlide3">
                             <div className="social-btn insta-hover flex flex-col items-center gap-3">
                                 <li><a className="hover:shadow-lg hover:shadow-red-900 shadow-lg shadow-red-900 lg:shadow-none transition duration-1000 ease-in-out hover:scale-80" href="https://www.instagram.com/fares_rahmoun/?hl=ar" target="_blank" rel="noreferrer"> <InstagramIcon className="social insta" /> </a> </li>
                                 <div className="name instt bg-red-900 rounded-md opacity-0 text-lg p-1 hidden lg:block">Rahmoun Fares</div>
