@@ -31,7 +31,7 @@
                                 <div className="name gitt bg-gray-400 text-black rounded-md opacity-0 text-lg p-1 hidden lg:block">RahmounFares2001</div>
                             </div>
                         </div>
-                        <div className="opacity-0 animate-socialSlidePhone2 lg:animate-socialSlide3">
+                        <div className="opacity-0 animate-socialSlidePhone lg:animate-socialSlide3">
                             <div className="social-btn insta-hover flex flex-col items-center gap-3">
                                 <li><a className="hover:shadow-lg hover:shadow-red-900 shadow-lg shadow-red-900 lg:shadow-none transition duration-1000 ease-in-out hover:scale-80" href="https://www.instagram.com/fares_rahmoun/?hl=ar" target="_blank" rel="noreferrer"> <InstagramIcon className="social insta" /> </a> </li>
                                 <div className="name instt bg-red-900 rounded-md opacity-0 text-lg p-1 hidden lg:block">Rahmoun Fares</div>
