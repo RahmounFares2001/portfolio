@@ -41,7 +41,7 @@ div ul div .social-btn:hover .name{
         opacity: 0;
     }
     to {
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -51,7 +51,18 @@ div ul div .social-btn:hover .name{
         opacity: 0;
     }
     to {
-        transform: translateY(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes socialSlide3 {
+    from {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -70,3 +81,6 @@ div ul div .social-btn:hover .name{
     animation: socialSlide3 1s 0.7s ease-out forwards;
 }
 
+.animate-socialSlidePhone{
+    animation: socialSlidePhone 1s 0.7s ease-out forwards;
+}
