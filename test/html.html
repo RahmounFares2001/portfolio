@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #282c34;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .animated-square {
+      width: 50px;
+      height: 50px;
+      background-color: #61dafb;
+      border-radius: 8px;
+      margin: 10px;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // Create animated squares
+    for (let i = 0; i < 6; i++) {
+      const square = document.createElement('div');
+      square.classList.add('animated-square');
+      document.body.appendChild(square);
+
+      anime({
+        targets: square,
+        translateX: anime.random(-250, 250),
+        translateY: anime.random(-250, 250),
+        scale: anime.random(1, 2),
+        rotate: anime.random(-360, 360),
+        easing: 'easeInOutQuad',
+        duration: 2000,
+        delay: anime.random(0, 2000),
+        opacity: [0, 1],
+        loop: true,
+      });
+    }
+  </script>
+</body>
+</html>

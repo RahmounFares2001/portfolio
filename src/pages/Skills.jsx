@@ -1,61 +1,47 @@
-import React from "react";
-
+import { hover } from "@testing-library/user-event/dist/hover";
+import React, { useState } from "react";
+import TechnicalSkills from "./Skills/TechnicalSkills";
+import SoftSkills from "./Skills/SoftSkills";
 
 
 export default function Skills(){
+    // active skills
+    const [active, setActive] = useState("active1");
+
+    // active btn
+    const [coloredBtn, setColoredBtn] = useState("tech");
+
+    const btnId = (id) => {
+        setColoredBtn(id)
+    };
+    const hoverStyle = "bg-gradient-to-l from-red-950 to-transparent text-gray-300 transition-colors duration-1000";
+    const coloringBtn = (id) => {
+        return coloredBtn === id ? hoverStyle : ""
+    };
 
     return(
-        <div className="mt-16 flex flex-col  items-center  animate-slideIn">  
-            <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl">Skills</h1>
-
-            <div className="flex flex-row lg:gap-20 md:text-lg lg:mt-10 md:gap-16 md:mt-8
-            sm:gap-10 sm:mt-6 gap-8 text-base mt-5"> 
-                <div>
-                    <div>
-                        <h1>JavaScript</h1>
-                        <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md "><div className="h-full w-4/5 bg-red-700 rounded-s-md
-                        animated-bar80"></div></div>
-                    </div>
-                    <div>
-                        <h1 className="mt-4">React js</h1>
-                        <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-3/5 bg-red-700 rounded-s-md 
-                        animated-bar70"></div></div>
-                    </div>
-                    <div>
-                        <h1 className="mt-4">Tailwind</h1>
-                        <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-3/5 bg-red-700 rounded-s-md 
-                        animated-bar80"></div></div>
-                    </div>
-                    <div>
-                        <h1 className="mt-4">HTML/CSS</h1>
-                        <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-4/5 bg-red-700 rounded-md
-                        animated-bar100 "></div></div>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <h1>Postgresql</h1>
-                        <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-4/5 bg-red-700 rounded-s-md
-                        animated-bar80"></div></div>
-                    </div>
-                    <div>
-                        <h1 className="mt-4">Typescript</h1>
-                        <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-4/5 bg-red-700 rounded-s-md
-                        animated-bar40 "></div></div>
-                    </div>
-                    <div>
-                        <h1 className="mt-4">Java</h1>
-                        <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-2/5 bg-red-700 rounded-s-md 
-                        animated-bar40"></div></div>
-                    </div>
-                    <div>
-                        <h1 className="mt-4">Python</h1>
-                        <div className="lg:w-80 lg:h-6 md:w-72 md:h-5 md:mt-1 sm:w-56 sm:h-5 sm:mt-1 w-36 h-4 mt-1 bg-gray-400 rounded-md"><div className="h-full w-2/5 bg-red-700 rounded-s-md 
-                        animated-bar40"></div></div>
-                    </div>
-                </div>
+        <div className="mt-16 flex flex-col  items-center  animate-slideIn">
+            <div className="lg:w-7/12 sm:w-8/12 w-9/12 flex justify-center">
+                <button className={`lg:w-4/6 lg:h-14 h-14 w-4/5 border-2 md:text-xl text-base
+                    border-gray-600 bg-gradient-to-r from-gray-400 to-transparent hover:bg-gradient-to-l
+                    hover:from-red-950 hover:to-transparent text-gray-950 hover:text-gray-400
+                        hover:transition-colors hover:duration-1000 cursor-pointer ${coloringBtn('tech')}`}
+                        onClick={()=>{
+                            btnId("tech");
+                            setActive("active1");
+                        }} >Technical skills</button>
+                <button className={`lg:w-4/6 lg:h-14 h-14 w-4/5 border-2 md:text-xl text-base
+                    border-gray-600 bg-gradient-to-r from-gray-400 to-transparent hover:bg-gradient-to-l
+                    hover:from-red-950 hover:to-transparent text-gray-950 hover:text-gray-400
+                        hover:transition-colors hover:duration-1000 cursor-pointer ${coloringBtn('soft')}`}
+                        onClick={()=>{
+                            btnId("soft");
+                            setActive("active2")
+                        }} >Soft skills</button>
             </div>
+
+            {active === "active1" && <TechnicalSkills />}
+            {active === "active2" && <SoftSkills /> }
           
         </div>
     )
