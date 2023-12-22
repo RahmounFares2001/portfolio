@@ -14,7 +14,7 @@ export default function Skills(){
     const btnId = (id) => {
         setColoredBtn(id)
     };
-    const hoverStyle = "bg-gradient-to-l from-red-950 to-transparent text-gray-300 transition-colors duration-1000";
+    const hoverStyle = "bg-gradient-to-l from-red-950 to-transparent text-gray-200 transition-colors duration-1000";
     const coloringBtn = (id) => {
         return coloredBtn === id ? hoverStyle : ""
     };
