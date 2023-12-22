@@ -3,7 +3,7 @@ import React from 'react'
 export default function SoftSkills() {
   return (
     <div className="flex flex-row lg:gap-20 md:text-lg lg:mt-10 md:gap-16 md:mt-8
-    sm:gap-10 sm:mt-6 gap-8 text-base mt-5"> 
+    sm:gap-10 sm:mt-6 gap-8 text-base mt-5 animate-fade-in"> 
         <div>
             <div>
                 <h1>Problem solving</h1>

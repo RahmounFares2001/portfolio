@@ -24,6 +24,18 @@ div ul div .social-btn:hover .name{
     animation: slideIn 1s ease-out;
 }
 
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.animate-slideUp{
+    animation: slideUp 0.6s ease-out;
+}
+
 
 /* @keyframes socialSlide1 {
     from {

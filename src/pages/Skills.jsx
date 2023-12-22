@@ -14,14 +14,14 @@ export default function Skills(){
     const btnId = (id) => {
         setColoredBtn(id)
     };
-    const hoverStyle = "bg-gradient-to-l from-red-950 to-transparent text-gray-200 transition-colors duration-1000";
+    const hoverStyle = "bg-gradient-to-l from-red-950 to-transparent text-gray-300 transition-colors duration-1000";
     const coloringBtn = (id) => {
         return coloredBtn === id ? hoverStyle : ""
     };
 
     return(
-        <div className="mt-16 flex flex-col  items-center  animate-slideIn">
-            <div className="lg:w-7/12 sm:w-8/12 w-11/12 flex justify-center">
+        <div className="mt-16 flex flex-col  items-center">
+            <div className="lg:w-7/12 sm:w-8/12 w-11/12 flex justify-center animate-fade-in">
                 <button className={`lg:w-4/6 lg:h-14 sm:h-14 h-12 w-4/5 border-2 md:text-xl text-base
                     border-gray-600 bg-gradient-to-r from-gray-400 to-transparent hover:bg-gradient-to-l
                     hover:from-red-950 hover:to-transparent text-gray-950 hover:text-gray-400
