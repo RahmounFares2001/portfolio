@@ -17,12 +17,24 @@ import styles from "./styles/styles.css"
 
 export default function HeaderLayout() {
 
+    // responsive
     const [isShowed, setShowed] = useState(false);
 
     function showMenu() {
         setShowed(!isShowed);
     }
 
+    // active section
+    const [active, setActive] = useState("home");
+
+    const btnId = (id) => {
+        setActive(id)
+    };
+
+    const activeStyle = "text-red-500 font-bold border-b border-red-600 transition-colors duration-1000"
+    const coloring = (id) => {
+        return active === id ? activeStyle : "";
+    };
 
     return(
         <div>
@@ -37,29 +49,41 @@ export default function HeaderLayout() {
                     hidden md:flex
                     "> 
 
-                        <NavLink to="/" className=" hover:text-red-500 hover:font-bold hover:border-b
+                        <NavLink to="/" className={`hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600  text-center hover:transition-colors hover:duration-1000 
-                          lg:w-16 md:w-12 pb-2">Home</NavLink>
+                          lg:w-16 md:w-12 pb-2 ${coloring("home")}`} onClick={()=> {
+                            btnId("home");
+                          }}>Home</NavLink>
 
-                        <NavLink to="/projects" className="hover:text-red-500 hover:font-bold hover:border-b
+                        <NavLink to="/projects" className={`hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600 text-center hover:transition-colors hover:duration-1000
-                         lg:w-24 md:w-24">Projects</NavLink>
+                         lg:w-24 md:w-24 ${coloring("projects")}`} onClick={()=>{
+                            btnId("projects")
+                         }}>Projects</NavLink>
 
-                        <NavLink to="/resume" className="hover:text-red-500 hover:font-bold hover:border-b
+                        <NavLink to="/resume" className={`hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600  text-center hover:transition-colors hover:duration-1000
-                         lg:w-20 md:w-16">Resume</NavLink>
+                         lg:w-20 md:w-16 ${coloring("resume")}`} onClick={()=>{
+                            btnId("resume")
+                         }}>Resume</NavLink>
 
-                        <NavLink to="/about" className="hover:text-red-500 hover:font-bold hover:border-b
+                        <NavLink to="/about" className={`hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600  text-center hover:transition-colors hover:duration-1000
-                          lg:w-20 md:w-16">About</NavLink>
+                          lg:w-20 md:w-16 ${coloring("about")}`} onClick={()=> {
+                            btnId("about")
+                          }}>About</NavLink>
 
-                        <NavLink to="/skills" className="hover:text-red-500 hover:font-bold hover:border-b
+                        <NavLink to="/skills" className={`hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600  text-center hover:transition-colors hover:duration-1000
-                         lg:w-20 md:w-16">skills</NavLink>
+                         lg:w-20 md:w-16 ${coloring("skills")}`} onClick={()=> {
+                            btnId("skills")
+                         }}>skills</NavLink>
 
-                         <NavLink to="/contactMe" className="hover:text-red-500 hover:font-bold hover:border-b
+                         <NavLink to="/contactMe" className={`hover:text-red-500 hover:font-bold hover:border-b
                          hover:border-red-600  text-center hover:transition-colors hover:duration-1000
-                         lg:w-20 md:w-16">Contact</NavLink>
+                         lg:w-20 md:w-16 ${coloring("contactMe")}`} onClick={() => {
+                            btnId("contactMe")
+                         }}>Contact</NavLink>
 
                     </div>
                 </div>
